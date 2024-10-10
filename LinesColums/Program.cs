@@ -22,15 +22,15 @@
                 Console.WriteLine();
             }
 
-            int productOfColum = matrix[0, columIndex];
-            int sumOfLine = matrix[lineIndex, 0];
+            int productOfColum = 1;
+            int sumOfLine = 0;
 
-            for (int i = 1; i < matrix.GetLength(0); i++)
+            for (int i = 0; i < matrix.GetLength(0); i++)
             {
                 productOfColum *= matrix[i, columIndex];
             }
 
-            for (int i = 1; i < matrix.GetLength(1); i++)
+            for (int i = 0; i < matrix.GetLength(1); i++)
             {
                 sumOfLine += matrix[lineIndex, i];
             }
