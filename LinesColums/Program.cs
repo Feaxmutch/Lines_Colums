@@ -10,7 +10,9 @@
             int[,] matrix = new int[3,3];
             int lineIndex = 1;
             int columIndex = 0;
-            
+            int productOfColum = 1;
+            int sumOfLine = 0;
+
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
                 for (int j = 0; j < matrix.GetLength(1); j++)
@@ -21,9 +23,6 @@
 
                 Console.WriteLine();
             }
-
-            int productOfColum = 1;
-            int sumOfLine = 0;
 
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
